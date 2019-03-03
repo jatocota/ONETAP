@@ -1,0 +1,55 @@
+import java.applet.Applet;
+import java.awt.*;
+import java.util.*;
+import java.awt.event.*;
+
+
+public class Hauptklasse extends Applet implements ActionListener {
+
+	Label label;
+	Button button1, button2, button3, button4;
+	
+	public void init() {
+		//Hintergrund, Layout, FONT
+		setBackground(Color.BLUE);
+		setFont(new Font("SansSerif", Font.BOLD, 50));
+		setLayout(new GridLayout(4,2));
+		//Überschrift
+		label = new Label();
+		label = new Label("Knopf Bierauswahl");
+		// Knöpfe
+		// Knopf1 
+		button1 = new Button("Selbstgebraut"); 
+		button1.setBackground(Color.BLUE);
+		button1.addActionListener(this);
+		add(button1);
+		// Knopf2 
+		button2 = new Button("Craft Beer"); 
+		button2.setBackground(Color.blue);
+		button2.addActionListener(this);
+		add(button2);
+		// Knopf3
+		button3 = new Button("Pils");
+		button3.setBackground(Color.BLUE);
+		button3.addActionListener(this);
+		add(button3);
+		// Knopf4
+		button4 = new Button("Lager");
+		button4.setBackground(Color.BLUE);
+		button4.addActionListener(this);
+		add(button4);
+		
+		
+		
+	}
+	
+	public void paint() {
+		
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+	
+
+}
